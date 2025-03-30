@@ -1,129 +1,148 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'poppins',sans-serif;
-    box-sizing: border-box;
+.img img{
+    height: 100px;  
 }
-body{
-    background: #222;
+.box{
+height: 270px;
+max-height: 500px;
+width: 400px;
+border: 2px solid black;
+/* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */
+/* margin-top: 200px; */
+background-color:white;
+border-radius: 20px;
+border:none;
+box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+transition: height 0.2s ease;
 }
 
-.card{
-   width: 90%;
-   max-width: 470px;
-   background: linear-gradient(135deg, #00feba,#5b548a);
-   color: #fff;
-   margin: 100px auto 0;
-   border-radius: 20px;
-   padding: 40px 35px;
-   text-align: center;
+.box.active{
+    height: 500px;
 }
-.search{
-    width: 100%;
+.headings{
+    line-height: 30px;
+}
+.box .headings h1{
+display: flex;
+justify-content: center;
+font-size: 40px;
+}
+.headings p{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    font-size: large;
 }
-.search input{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+.headings .input{
+   margin-left: 55px;
+   height: 40px;
+   width: 280px;
+   margin-bottom: 30px;
 }
-.search button{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+input{
+    font-size: large;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.box button{
+    margin-left: 55px;
+    height: 40px;
+    width: 295px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: rgb(1, 1, 62);
+    color: white;
     cursor: pointer;
 }
-.search button img{
-    width: 16px;
-}
-.weather-icon{
-    width: 170px;
-    margin-top: 30px;
-}
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-}
-.weather h2{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -10px;
-}
-.details{
+body{
+    background: linear-gradient(to bottom,white,rgb(1, 1, 62));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
 }
-.col{
+.img{
+    border: 2px solid black;
+    height: 160px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: left;
+    width: 150px;
+    padding: 5px;
+    margin-left: 120px;
+    box-shadow: 0px 0px 30px rgb(1, 1, 62);
+    opacity:0;
+    pointer-events: none;
 }
-.col img{
-    width: 40px;
-    margin-right: 10px;
+.img img{
+    height: 150px;
 }
-.humidity , .wind{
-    font-size: 28px;
-    margin-top: -6px;
+.box .headings input{
+    display: flex;
 }
-.error{
-    text-align: left;
-    margin-left: 10px;
-    font-size: 14px;
-    margin-top: 10px;
-    display: none;
+.box.active .img{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
 }
 
 
-/* Adjust layout for mobile screens */
-@media (max-width: 600px) {
-    .card {
-        width: 95%;  /* Make card take more space */
-        max-width: 100%; /* Remove max-width restriction */
-        padding: 30px 20px;  /* Reduce padding */
-    }
 
-    .search input {
-        font-size: 16px; /* Reduce font size */
-        padding: 8px 15px; /* Adjust padding */
-        height: 50px;
-    }
 
-    .search button {
-        width: 50px;
-        height: 50px;
+@media (max-width: 500px) {
+    .box .headings h1 {
+        font-size: 24px;
     }
-
-    .weather h1 {
-        font-size: 60px; /* Reduce temperature font size */
+    
+    .headings p {
+        font-size: medium;
     }
-
-    .weather h2 {
-        font-size: 35px;
+    
+    .box {
+        padding: 15px 0;
     }
-
-    .details {
-        flex-direction: column; /* Stack humidity and wind details vertically */
-        align-items: center;
-        margin-top: 30px;
+    
+    .headings .input,
+    .box button {
+        max-width: 250px;
     }
+    
+    .img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .img img {
+        height: 120px;
+    }
+}
 
-    .col {
-        margin-bottom: 15px;
+@media (max-width: 350px) {
+    .box .headings h1 {
+        font-size: 20px;
+    }
+    
+    .headings p {
+        font-size: small;
+    }
+    
+    .headings .input,
+    .box button {
+        max-width: 200px;
+        font-size: medium;
+    }
+    
+    .img {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .img img {
+        height: 100px;
     }
 }
