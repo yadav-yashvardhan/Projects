@@ -1,22 +1,46 @@
-🌦️ Weather App
-A simple and responsive Weather App that fetches real-time weather data using the OpenWeather API.
+📱 QR Code Generator
 
-🔹 Features
-✅ Search weather by city name 🌍
-✅ Displays temperature, humidity, and wind speed 🌡️💨
-✅ Dynamic weather icons based on conditions ☀️🌧️🌫️
-✅ Fully responsive design using CSS media queries 📱💻
+A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript.
+Enter any text or URL and instantly generate a QR code that can be scanned from any device.
 
-🛠️ Technologies Used
-HTML – Structuring the app
+🚀 Features
 
-CSS – Styling and responsiveness
+✅ Generate QR codes for text or URLs
 
-JavaScript – Fetching and displaying weather data
+🎨 Simple & clean UI with responsive design
 
-🚀 How to Use
-Enter a city name in the search bar.
+⚡ Instant generation without reload
 
-Click the search button.
 
-Get real-time weather updates instantly!
+🛠️ Tech Stack
+
+HTML5
+
+CSS3
+
+JavaScript (ES6)
+
+
+📂 Project Structure
+QR-Generator/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+
+
+Clone the repo
+
+git clone https://github.com/your-username/qr-generator.git
+
+
+Open index.html in your browser
+
+Enter any text/URL and click Generate
+
+Scan the QR code using your device
+
+🌟 Live Demo
+
+👉 Click Here to Try
+[ (Add Netlify/Vercel/Render link if deployed)](https://qr-generatorbyyashvardhanydv.netlify.app/)
