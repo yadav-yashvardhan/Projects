@@ -31,7 +31,7 @@ QR-Generator/
 
 Clone the repo
 
-git clone https://github.com/your-username/qr-generator.git
+git clone https://github.com/yadav-yashvardhan/qr-generator.git
 
 
 Open index.html in your browser
@@ -43,4 +43,4 @@ Scan the QR code using your device
 🌟 Live Demo
 
 👉 Click Here to Try
-[ (Add Netlify/Vercel/Render link if deployed)](https://qr-generatorbyyashvardhanydv.netlify.app/)
+[ (QR Generator)](https://qr-generatorbyyashvardhanydv.netlify.app/)
